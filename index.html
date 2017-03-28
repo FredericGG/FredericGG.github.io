@@ -6,7 +6,7 @@
   </head>
   <body>
     <header>
-      <img src="liens/titre.jpg">
+      <img src="liens/titre.jpg" alt="mon logo à moi">
 	  <h1>Bienvenue dans la programmation html </h1>
 	</header>
 	<nav>
@@ -14,6 +14,9 @@
         <li><a href="#Rappel">Rappel des bases</a></li>
 		<li><a href="#Details">Les petits détails</a></li>
         <li><a href="#Contenu">Le contenu</a></li>
+		  <ul>
+		    <li><a href="#Bases">Quelques bases</a></li>
+			<li><a href="#Structure">Comment structurer</a></li>
         <li><a href="#Finir">Pour finir car j'avais oublié</a></li>
 		<li><a href="#Utiles">Quelques liens utiles</a></li>
       </ul>
@@ -43,6 +46,7 @@
 		  <p> le gras c'est la vie, mettez votre publicité </p>
 		</aside>
         <h2> Les petits détails </h2>
+		<p> Dans cette partie nous allons voir quelques petits détails important pour bien commencer </p>
         <ol>
           <li>Pour la tête on utilise &lt;head&gt;. La tête permet d'avoir les détails </li>
           <li>Pour le corps on utilise &lt;body&gt;. Le corps permet d'avoir le contenu </li>
@@ -59,21 +63,30 @@
 	    <aside>
 		  <p> le gras c'est la vie, mettez votre publicité </p>
 		</aside>
-        <h2>Le contenu</h2>
-	    <p>Pour le texte il suffit de mettre le texte entre les balises &lt;p&gt; et &lt;/p&gt;</p>
-        <p>Seulement c'est fastidieux car il ne respecte pas la mise en forme du texte que tu viens de taper et pour cela il vaut mieux utiliser la balise &lt;pre&gt; et c'est exactement ce que je vais faire! <p/>
-        <pre>Comme on peut le voir la balise &lt;pre&gt;permet plus de souplesse dans la mise en forme d'un texte!
+          <h2>Le contenu</h2>
+	      <article id="Bases">
+		    <h3>Quelques bases<h3>
+	        <p>Pour le texte il suffit de mettre le texte entre les balises &lt;p&gt; et &lt;/p&gt;</p>
+            <p>Seulement c'est fastidieux car il ne respecte pas la mise en forme du texte que tu viens de taper et pour cela il vaut mieux utiliser la balise &lt;pre&gt; et c'est exactement ce que je vais faire! <p/>
+            <pre>Comme on peut le voir la balise &lt;pre&gt;permet plus de souplesse dans la mise en forme d'un texte!
 Je peux aller à la ligne et celle-ci sera pris automatiquement en compte :) ! </pre>
-        <p>On peut ensuite ordonner ses idées en utilisant des listes. Des listes ordonnées avec &lt;ol&gt; puis &lt;li&gt;le texte de la liste &lt;/li&gt;</p>
-        <p>Et cela autant de fois qu'on le souhaite! Puis on termine par...... &lt;/ol&gt;</p>
-        <p>On peut ensuite ordonner ses idées en utilisant des listes non ordonnées. Avec &lt;ul&gt; puis &lt;li&gt;le texte de la liste &lt;/li&gt;</p>
-        <p>Et cela autant de fois qu'on le souhaite! Puis on termine par...... &lt;/ul&gt;</p>
-	    <p>On peu aussi utiliser le système de liste pour les définitions avec &lt;dl&gt; puis &lt;dt&gt; le terme à définir et ensuite &lt;dd&gt;</p>
-	    <p> Exemple: </p>
-        <dl>
-          <dt>Une tasse</dt>
-          <dd>La tasse est un type de récipient</dd>
-        </dl>
+            <p>On peut ensuite ordonner ses idées en utilisant des listes. Des listes ordonnées avec &lt;ol&gt; puis &lt;li&gt;le texte de la liste &lt;/li&gt;</p>
+            <p>Et cela autant de fois qu'on le souhaite! Puis on termine par...... &lt;/ol&gt;</p>
+            <p>On peut ensuite ordonner ses idées en utilisant des listes non ordonnées. Avec &lt;ul&gt; puis &lt;li&gt;le texte de la liste &lt;/li&gt;</p>
+            <p>Et cela autant de fois qu'on le souhaite! Puis on termine par...... &lt;/ul&gt;</p>
+	        <p>On peu aussi utiliser le système de liste pour les définitions avec &lt;dl&gt; puis &lt;dt&gt; le terme à définir et ensuite &lt;dd&gt;</p>
+	        <p> Exemple: </p>
+            <dl>
+              <dt>Une tasse</dt>
+              <dd>La tasse est un type de récipient</dd>
+            </dl>
+		</article>
+		<article id="Structure">
+		  <h3>Comment structurer?</h3>
+		  <p>Nous allons pouvoir structurer notre page html et voici comment!</p>
+		  <p>Il est possible de créer une entête avec &lt;header&gt; et &lt;/header&gt;</p>
+		  <P>Il en va de même pour les pieds de page avec les balises : &lt;footer&gt; et &lt;/footer&gt;</p>
+		  <p>Dans le contenu 
 	  </article>
 	  <article id="Finir">
 	    <aside>
