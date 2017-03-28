@@ -109,8 +109,11 @@ Je peux aller à la ligne et celle-ci sera pris automatiquement en compte :) ! <
 		  <p> puis les balises &lt;tr&gt; et &lt;/tr&gt; pour définir les lignes et pour définir les cellules &lt;td&gt; et &lt;/td&gt;
 		  <p>Voici un lien vers un exemple de tableau et comme ça je mets en application une autre façon de déposer un lien <p>
 		  <a target="_blank" href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/table#Exemples"> Lien vers Tableaux </a> </li>
-		  <p>Je vais quand-même en créer un avec des entêtes<p>
+		  <p>Je vais quand-même en créer un avec des entêtes &lt;thead&gt; et &lt;/thead&gt; et des pieds de tableau&lt;tfoot&gt; et &lt;/tfoot&gt;<p>
+		  <P>Pour chaques cellules d'entete et de colonnes il faut utiliser les balises &lt;th&gt; et &lt;/th&gt;
+		  <P> et pour la légende...... &lt;caption&gt; et &lt;/caption&gt; sauf qu'il faut le mettre en début de tableaux
 		  <table>
+		    <caption>TestdeLégende</caption>
 		    <thead>
 			  <th>1</th>
 			  <th>2</th>
@@ -128,11 +131,8 @@ Je peux aller à la ligne et celle-ci sera pris automatiquement en compte :) ! <
 			  <td>D</td>
 			</tr>
 			<tr>
-			  <td rowspan="2">LOL</td>
+			  <td rowspan="2" colspan="2">LOL</td>
 		    </tr>
-			<tr>
-			  <td colspan="4">lolololololololololol</td>
-			</tr>
 		  </table>
 		</article>
 	</section>
