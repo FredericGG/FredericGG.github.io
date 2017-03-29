@@ -1,0 +1,24 @@
+.carre{
+  display:inline-block;
+  height: 150px;
+  width: 10px;
+}
+.vert{
+  background-color: teal;
+}
+.bleu{
+  background-color: blue;
+}
+.rectangle{
+  display:inline-block;
+  height: 150px;
+  width: 500px;
+}
+.rectangle{
+  display:inline-block;
+  height: 150px;
+  width: 500px;
+}
+.rouge{
+  background-color: red;
+}

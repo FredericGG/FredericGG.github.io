@@ -1,28 +1,37 @@
-<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
     <title> titre du document </title>
+    <link rel="stylesheet" type="text/css" href="style2.css"/>
   </head>
   <body>
     <header>
-      <img src="liens/titre.jpg" alt="mon logo à moi">
+    <div class="image"> 
+      <img src="liens/titre.jpg" alt="mon logo à moi"> 
       <h1>Bienvenue dans la programmation html </h1>
+    </div>
+    <div class="pub">
+      <aside>
+       <p> le gras c'est la vie, mettez votre publicité </p>
+      </aside>
+    </div>
     </header>
-    <nav>
-      <ul>
-        <li><a href="#Rappel">Rappel des bases</a></li>
-        <li><a href="#Details">Les petits détails</a></li>
-        <li><a href="#Contenu">Le contenu</a></li>
-        <li><ul>
-            <li><a href="#Bases">Quelques bases</a></li>
-            <li><a href="#Structure">Comment structurer</a></li>
-            <li><a href="#Tableaux">Les tableaux</a></li>
-          </ul></li>
-        <li><a href="#Finir">Pour finir car j'avais oublié</a></li>
-        <li><a href="#Utiles">Quelques liens utiles</a></li>
-      </ul>
-    </nav>
+    <div class="nav">
+      <nav>
+        <ul>
+          <li><a href="#Rappel">Rappel des bases</a></li>
+          <li><a href="#Details">Les petits détails</a></li>
+          <li><a href="#Contenu">Le contenu</a></li>
+          <li><ul>
+              <li><a href="#Bases">Quelques bases</a></li>
+              <li><a href="#Structure">Comment structurer</a></li>
+              <li><a href="#Tableaux">Les tableaux</a></li>
+          </li></ul>
+          <li><a href="#Finir">Pour finir car j'avais oublié</a></li>
+          <li><a href="#Utiles">Quelques liens utiles</a></li>
+        </ul>
+      </nav>
+    </div>
     <section class="Rappel des bases">
       <article id="Rappel">
         <h2> Rappel des bases</h2>
@@ -41,9 +50,6 @@
     </section>
     
     <article id="Details">
-    <aside>
-      <p> le gras c'est la vie, mettez votre publicité </p>
-    </aside>
       <h2> Les petits détails </h2>
       <p> Dans cette partie nous allons voir quelques petits détails important pour bien commencer </p>
       <ol>
@@ -59,9 +65,6 @@
       <p> Et pour le contenu?</p>
     </article>
     <section id="Contenu">
-      <aside>
-        <p> le gras c'est la vie, mettez votre publicité </p>
-      </aside>
       <h2>Le contenu</h2>
         <article id="Bases">
           <h3>Quelques bases</h3>
