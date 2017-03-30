@@ -1,32 +1,89 @@
 body{
   background-color:linen;
 }
-.image{
-  text-align:center;
+.conteneur{
+  display:flex;
+  width:650px;
+  margin:0px auto;
+  flex-direction:column;
 }
-.nav{
+.headeur{
   display:block;
-  height: 215px;
-  width: 280px;
-  background-color: aquamarine;
-  position:relative;
-  top: 10px;
-  font-weight: bold;
-  font-size  : 1em;
-  line-height: 150%;
+  text-align:center;
+  max-width:100%
+}
+
+.texte{
+  display:block;
+  text-align:justify;
+  width:100%;
   font-family: Helvetica, Arial, sans-serif;
 }
-.pub{
+.foot{
   display:block;
+  text-align:center;
+}
+.navi{
+  display:inline-block;
+  left:10px;
+  height: 450px;
+  width: 250px;
+  /*border: 5px solid black;
+  border-radius:10px 10px;
+  
+  background-color: transparent;*/
+  position:fixed;
+  top:30px;
+  font-style:italic;
+  line-height:20px;
+  font-family: Helvetica, Arial, sans-serif;
+  text-align:justify;
+}
+.pub{
+  display:inline-block;
   height: 600px;
   width: 150px;
-  background-color: aquamarine;
   position:fixed;
   right:10px;
   top: 50%;
   transform: translateY(-50%);
-  font-weight: bold;
-  font-size  : 1em;
-  line-height: 150%;
-  font-family: Helvetica, Arial, sans-serif;
+}
+#stop{
+  list-style-type:none;
+}
+.lol{
+ display:block;
+  left:15px;
+  top:520px;
+  position:fixed;
+}
+.styleUL{
+  width: 250px;
+  list-style: none; 
+  padding: 4px; 
+  margin: 0;
+  background: #F2F2F2;
+}
+
+.classli,
+.classli a {
+  /* les liens et item deviennent des blocs */
+  /* suffit théoriquement à virer les puces de liste */
+  display: block;
+}
+ 
+/* styles des liens */
+.classli a {
+  margin: 1px 0; /* espace les liens d'1 px */
+  padding: 8px 20px; /* marges internes pour aérer */ 
+  color: #00008B;
+  background: #A9A9A9;
+  text-decoration: none;/* on vire le soulignement */
+  text-align:center;
+}
+.classli a:hover,
+.classli a:focus {
+  background: #1ABC9C;
+  color: #FFF;
+  padding-left: 30px; /* décalage du contenu de 10px vers la droite (30-20 = 10) */
 }
