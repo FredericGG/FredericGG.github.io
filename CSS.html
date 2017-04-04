@@ -1,0 +1,137 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title> Langages HTML et CSS </title>
+    <link rel="stylesheet" type="text/css" href="style2.css"/>
+	<link rel="shortcut icon" type="image/x-icon" href="liens/logopage2.png" alt="mon logopage"/>
+  </head>
+  <body>
+  <div class="conteneur"> 
+    <header class="headeur"> 
+      <img src="liens/CSS3.jpg" alt="mon logo à moi"> 
+      <h1 class="titre1" id="gdtitre">Bienvenue dans le langage CSS </h1>
+    </header>
+    <div class="texte">
+      <section class="CSS">
+        
+        <article id="Introduction">
+          <h2>Introduction au CSS</h2>
+          <p>Le langage CSS est une langage de feuille de style qui permet de créer la structure graphique de votre page web</p>
+          <p>Pour cela, il va falloir créer une feuille de style en CSS</p>
+          <p>On l'appellera dans notre fichier html grâce à &lt;link rel="stylesheet" type="text/css" href="monstyle.css"&gt;</p>
+          <p>Il ne faut pas oublier de mettre la feuille de style dans le même document (ça simpliefie la vie)</p>
+          <p>Il va permettre notamment de modifier la police de vos caracteres, la couleur et le style</p>
+          <p>Il permet aussi d'organiser vos éléments sur votre page web en utilisant un système de boite</p>
+        </article>
+        <article id="Structure">
+          <h2>Structure de la règle CSS</h2>
+          <p>Une règle CSS va s'écrire sous la forme: sélecteur, propriété et valeur (propriété+valeur=déclaration)</p>
+          <p>On connait tous maintenant la balise &lt;p&gt; qui permet d'écrire du texte</p>
+          <p>On peut s'en servir comme sélecteur et lui appliquer une déclaration</p>
+          <p>Exemple:</p>
+          <p>p{color:red;}</p>
+          <p>Ce ci va vous permettre d'écrire tout le texte contenu dans des balises &lt;p&gt; en rouge</p>
+          <p>En donnant un id ou une classe à nos balises, on va pouvoir appeler un id et ainsi appliquer une déclaration...</p>
+          <p>D'autres sélecteur vont pouvoir être utiliser</p>
+          <p>c'est ce que nous allons voir dans le prochain paragraphe</p>
+        </article>
+        <article id="Selecteurs">
+          <h2> Différents sélecteurs</h2>
+          <p> Il existe cinq familles de sélecteur</p>
+          <ul>
+            <li><p>Les sélecteurs de balises ou d'éléments</p></li>
+            <li><p>Les sélecteurs d'id</p></li>
+            <li><p>Les sélecteurs de classe</p></li>
+            <li><p>Les sélecteurs d'attributs </p></li>
+            <li><p>Les sélecteurs de pseudo classe</p></li>
+          </ul>
+          <p>Chaque type de sélecteurs a une manière propre d'être appelé dans la feuille de style</p>
+          <p>Pour les sélecteurs de balise ou d'éléments, on va les appeler : p{.......}</p>
+          <p>Pour les sélecteurs d'id, on va les appeler : #mon_id{.......}</p>
+          <p>Pour les sélecteurs de classe, on va les appeler: .ma_classe {......}(Ne pas oublier le point (.) devant le nom</p>
+          <p>Pour les sélecteurs d'attributs, on va les appeler de la manière suivante: img[src]</p>
+          <p>Pour les pseudo classes, on va les appeler: a:hover (la propriété hover va s'appliquer à la balise a)</p>
+          
+        </article>
+        <article id ="Les boites">
+          <h2>Les boites</h2>
+          <p>le systeme de boites va permettre de ranger tout ce que vous voulez a l'intérieur puis de les disposer à notre bon vouloir</p>
+          <p>&lt;div class="classdiv"&gt;tout ce qu'on veut mettre dans la boite &lt;/div&gt; tout ceci dans le fichier html<p>
+          <p>puis on l'appellera en utilisant la classe dans le fichier CSS: .classdiv{..}<p>
+          <p>Il est important de noter que l'on peut créer des boites qui s'ajuste automatiquement grâce au flexbox<p>
+          <p>Les boites ont une forme qui contient des marges, une bordure et les différents écarts de remplissage</p>
+          <p>La marge est définie par margin</p>
+          <p>La bordure est définie par border</p>
+          <p>On va créer des boites avec div, comme suivant: </p>
+          <p>Les différences de remplissage vont être définis par le padding</p>
+          <p>Voici une représentation schématique de la forme d'une boite</p>
+          <img src="liens/boite.jpg" alt="une boite">
+        </article>
+        <article id = "Encore les boites">
+          <h2>Encore les boites</h2>
+          <p>Dans notre fichier CSS, on va pouvoir créer nos fameuses boites et pour cela on va utiliser le : diplay:</p>
+          <p>Le display:block; va permettre de créer des boites les unes au dessus des autres</p>
+          <p>Le display:inline-block; va permettre de créer des boites sur une même ligne</p>
+          <p>Le display:flex; permet quant à lui de créer des boites "magiques" auto-ajustantes</p>
+          <p>Pour définir une taille spécifique il y a : height:100px; hauteur de 100 pixels </p>
+          <p>Pour définir une largeur spécifique il y a : width: 200px; largeur de 200pixels</p>
+          <p>Création de la boite dans le fichier html &lt;div&gt class="carre vert" &lt;/div&gt<p>
+          <p>Et ensuite on va pouvoir mettre de la forme à tout ça grâce au fichier CSS<p>
+          <p>.carre{
+          <p>display:block;</p>
+          <p>height: 150px;</p>
+          <p>width: 150px;}</p>
+          <p>Ceci crée un carré de hauteur 150pixels et de largeur 150pixels</p>
+          <p>Mais maintenant on veut lui donner du style<p>
+          <p>.vert{
+          <p>background-color:green;</p>
+          <p>position:absolute</p>
+          <p>top:60px;</p>
+          <p>left: 60px;}</p>
+          <p>Top, bottom, left et right permettent de définir la position de la boite à l'écran</p>
+          <p>Les différentes positions absolutes, relatives et fixed, permet de savoir quelles types de règles s'appliquent au positionnement</p>
+          <p>Relative la boite aura une position par rapport à la fenêtre et sera dans le flux</p>
+          <p>Absolute la boite aura une position par rapport à la fenêtre et sera retirée du flux</p>
+          <p>Fixed la boite ne suivra pas le flux comme en absolu et restera fixe sur l'écran</p>
+          <a id="liensliens" target="_blank" href="https://developer.mozilla.org/fr/docs/Web/CSS/position"> Positions </a>
+        </article>
+         
+        <article id ="Utiles">
+          <h2>Quelques liens utiles!</h2>
+          <ul>
+            <li> <a href="https://developer.mozilla.org/fr/docs/Web/HTML"> MDN </a> </li>
+            <li> <a target="_blank" href="https://openclassrooms.com/courses/apprenez-a-creer-votre-site-web-avec-html5-et-css3"> Open classroom </a> </li>
+          </ul>
+        </article>
+      </section>
+    </div>
+    <footer class="foot">
+      <p>Tout droits réservés</p>
+    </footer>
+    </div>
+    <div class="lol">
+    <img src="liens/logol.jpg" alt="logo html et css">
+    </div>
+    <nav class="navi">
+      <ul class="styleUL">
+        <li class="classli classliA"><a href="index.html">Langage HTML</a></li>
+
+        
+        <li class="classli classliA"><a href="#LCSS">Langage CSS</a></li>
+        <li class="classli"><a href="#Introduction">Introduction au CSS</a></li>
+        <li class="classli"><a href="#Structure">Structure de la règle CSS</a></li>
+        <li class="classli"><a href="#Selecteurs">Les sélecteurs</a></li>
+        <li class="classli"><a href="#Les boites">Les boites</a></li>
+        <li class="classli"><a href="#Encore les boites">Encore les boites</a></li>
+        
+        <li class="classli classliA"><a href="#Utiles">Quelques liens utiles</a></li>
+        
+        <li class="classli classliA"><a href="formulaire.html"/>Votre avis nous intéresse</a></li>
+      </ul>
+    </nav>
+    <aside class ="pub">
+      <img src="liens/pub.jpg" alt="perceval presidentielle golden moustache">
+    </aside>
+  </body>
+  
+</html>

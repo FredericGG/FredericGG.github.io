@@ -1,26 +1,44 @@
 body{
   background-color:linen;
+  background-image:url(liens/papyrus1.jpg)
 }
 .conteneur{
   display:flex;
   width:650px;
   margin:0px auto;
   flex-direction:column;
+  border-style:inset;
+  border-color:black;
+  border-width:4px;
+  padding-right:10px;
+  padding-left:10px;
+  padding-top:10px;
+  padding-bottom:10px;
+  border-radius:10px;
+
 }
 .headeur{
-  display:block;
+  font-family: Papyrus,fantasy;
   text-align:center;
   max-width:100%
 }
 
 .texte{
-  display:block;
+
   text-align:justify;
   width:100%;
-  font-family: Helvetica, Arial, sans-serif;
+  /*font-family: Helvetica, Arial, sans-serif;*/
+  font-family: Papyrus,fantasy;
+  font-size: 19px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 580;
+  line-height: 20px;
+  
+  
 }
 .foot{
-  display:block;
+
   text-align:center;
 }
 .navi{
@@ -48,14 +66,28 @@ body{
   top: 50%;
   transform: translateY(-50%);
 }
+.pub:hover{
+  right: 100px;
+  transition-duration:2s;
+}
 #stop{
   list-style-type:none;
 }
+h2, 
+h3{
+  text-decoration:underline;
+}
+
+
 .lol{
  display:block;
   left:15px;
-  top:520px;
+  top:70%;
+  /*top:550px; le 70% permet de s'adapter à différents écran notamment le mien qui ets plus petit car en 550 px les images étaient hors écran*/
   position:fixed;
+}
+.styleUL2{
+  list-style: none; 
 }
 .styleUL{
   width: 250px;
@@ -68,22 +100,130 @@ body{
 .classli,
 .classli a {
   /* les liens et item deviennent des blocs */
-  /* suffit théoriquement à virer les puces de liste */
   display: block;
 }
  
-/* styles des liens */
 .classli a {
-  margin: 1px 0; /* espace les liens d'1 px */
-  padding: 8px 20px; /* marges internes pour aérer */ 
+  margin: 1px 0; /* espace des liens */
+  padding: 8px 20px; /* marges internes */ 
   color: #00008B;
   background: #A9A9A9;
-  text-decoration: none;/* on vire le soulignement */
+  text-decoration: none;/* plus de soulignement */
   text-align:center;
 }
 .classli a:hover,
 .classli a:focus {
   background: #1ABC9C;
   color: #FFF;
-  padding-left: 30px; /* décalage du contenu de 10px vers la droite (30-20 = 10) */
+  padding-left: 30px; /* décalage du contenu de 10px vers la droite */
 }
+.classliA a{ /*style différent*/
+  background-color: #8B0000;
+  color:#FFF;
+}
+
+img{
+  display:block;
+  margin: 0 auto;
+}
+.formulaire{
+  display:flex;
+  width:650px;
+  margin:0px auto;
+  flex-direction:column;
+}
+
+.label{
+   display:block;
+   width:300px;
+}
+/*.label{    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    width: 80px; 
+    height: 23px;
+    padding: 7px 0 0 15px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 0px -1px 0px rgba(0,0,0,0.2);
+    border-radius: 5px 0px 0px 5px;
+    box-shadow: 0px 1px 1px rgba(0,0,0,1) inset;
+    background: #09c;
+    background: -webkit-linear-gradient(#51c3fa,#09c);
+    background:    -moz-linear-gradient(#51c3fa,#09c);
+    background:      -o-linear-gradient(#51c3fa,#09c);
+    background:         linear-gradient(#51c3fa,#09c);
+    
+}
+.formulaire{
+    background: #eee;
+    padding: 30px;
+    margin-top: 30px;
+}
+
+.formulaire form p{
+    height: 30px;
+    margin: 5px;
+}
+.formulaire input:focus{
+    outline: none;
+    box-shadow: 0px 0px 3px #000;  
+    background: rgba(255,255,255,.9);
+    -webkit-animation: pulse 1s infinite alternate;
+       -moz-animation: pulse 1s infinite alternate;
+         -o-animation: pulse 1s infinite alternate;
+            animation: pulse 1s infinite alternate; 
+}
+
+@-webkit-keyframes pulse{
+    from {
+        box-shadow: 0 0 0px deepskyblue;
+    }
+    to   {
+        box-shadow: 0 0 14px deepskyblue;
+    }
+}
+@-moz-keyframes pulse{
+    from {
+        box-shadow: 0 0 0px deepskyblue;
+    }
+    to   {
+        box-shadow: 0 0 14px deepskyblue;
+    }
+}
+@-o-keyframes pulse{
+    from {
+        box-shadow: 0 0 0px deepskyblue;
+    }
+    to   {
+        box-shadow: 0 0 14px deepskyblue;
+    }
+}
+@keyframes pulse{
+    from {
+        box-shadow: 0 0 0px deepskyblue;
+    }
+    to   {
+        box-shadow: 0 0 14px deepskyblue;
+    }
+}*/
+
+#nom,
+#prenom,
+#mail,
+#com,
+#naissance{
+  display:block;
+  width:300px;
+  border-radius:10%;
+}
+.titre1{
+  text-align:center;
+  font-size:35px;
+  font-style:italic;
+}
+#liensliens{
+  display:block;
+  text-align:center;
+}
+

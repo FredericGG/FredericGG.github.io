@@ -1,14 +1,15 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title> titre du document </title>
+    <title> Langages HTML et CSS </title>
     <link rel="stylesheet" type="text/css" href="style2.css"/>
+	<link rel="shortcut icon" type="image/x-icon" href="liens/logopage2.png" alt="mon logopage"/>
   </head>
   <body>
   <div class="conteneur"> 
     <header class="headeur"> 
-      <img src="liens/titre.jpg" alt="mon logo à moi"> 
-      <h1>Bienvenue dans la programmation html </h1>
+      <img src="liens/HTML5.jpg" alt="mon logo à moi"> 
+      <h1 class="titre1" id="gdtitre">Bienvenue dans la programmation html </h1>
     </header>
     <div class="texte">
       <article id="Rappel">
@@ -33,7 +34,7 @@
           <li>Pour la tête on utilise &lt;head&gt;. La tête permet d'avoir les détails </li>
           <li>Pour le corps on utilise &lt;body&gt;. Le corps permet d'avoir le contenu </li>
           <li>Pour les titres : 6 différents</li>
-          <li> <ul>
+          <li class="styleUL2"> <ul>
               <li>Pour le titre 1 &lt;h1&gt; (original n'est ce pas?) Ne pas oublier qu'il ne peut y avoir qu'un seul titre 1!!!!! </li>
               <li>Pour les autres titres &lt;h2&gt; jusqu'à &lt;h6&gt; </li>
               <li>Remarque on a pu constater que chaque titre avait une mise en forme propre (y compris sans CSS):</li>
@@ -52,6 +53,7 @@
             <p>Et cela autant de fois qu'on le souhaite! Puis on termine par...... &lt;/ol&gt;</p>
             <p>On peut ensuite ordonner ses idées en utilisant des listes non ordonnées. Avec &lt;ul&gt; puis &lt;li&gt;le texte de la liste &lt;/li&gt;</p>
             <p>Et cela autant de fois qu'on le souhaite! Puis on termine par...... &lt;/ul&gt;</p>
+			
             <p>On peu aussi utiliser le système de liste pour les définitions avec &lt;dl&gt; puis &lt;dt&gt; le terme à définir et ensuite &lt;dd&gt;</p>
             <p> Exemple: </p>
             <dl>
@@ -73,8 +75,8 @@
             <p> Il suffit de rajouter un id à la balise de la section ou de l'article &lt;section id="encre"&gt; et &lt;section id="encre"&gt; </p>
             <p> On verra dans le menu navigation comment les appeler! </p>
             <p>Pour créer un menu de navigation, il faut utiliser les balises &lt;nav&gt; et &lt;/nav&gt;</p>
-            <p>Puis pour appeler les encres, il faut utiliser des # je vous invite à voir ce lien</p>
-            <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/nav"> appel d'encres </a>
+            <p>Puis pour appeler les ancres, il faut utiliser des # je vous invite à voir ce lien</p>
+            <a id="liensliens" target="_blank" href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/nav"> Appel d'ancres </a>
             <p>Enfin pour déposer un lien il faut utiliser les balises &lt;/a&gt;et &lt;/a&gt; Cependant il existe différentes façon d'appeler un lien</p>
             <ol>
               <li><p>L'implémentation par défaut &lt;a&gt; href="le lien"&lt;/a&gt; ou avec &lt;a&gt; target="_self" href="le lien"&lt;/a&gt;</p></li>
@@ -90,7 +92,7 @@
             <p> il faut utiliser les balises &lt;table&gt; et &lt;/table&gt; pour la création du tableau</p>
             <p> puis les balises &lt;tr&gt; et &lt;/tr&gt; pour définir les lignes et pour définir les cellules &lt;td&gt; et &lt;/td&gt;</p>
             <p>Voici un lien vers un exemple de tableau et comme ça je mets en application une autre façon de déposer un lien </p>
-            <a target="_blank" href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/table#Exemples"> Lien vers Tableaux </a>
+            <a id="liensliens" target="_blank" href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/table#Exemples"> Lien vers Tableaux </a>
             <p>Je vais quand-même en créer un avec des entêtes &lt;thead&gt; et &lt;/thead&gt; et des pieds de tableau&lt;tfoot&gt; et &lt;/tfoot&gt;</p>
             <p>Pour chaques cellules d'entete et de colonnes il faut utiliser les balises &lt;th&gt; et &lt;/th&gt;</p>
             <p> et pour la légende...... &lt;caption&gt; et &lt;/caption&gt; sauf qu'il faut le mettre en début de tableaux</p>
@@ -130,17 +132,43 @@
           <p> On peut mettre en évidence certains mots en utilisant&lt;strong&gt; avec &lt;/strong&gt;, &lt;em&gt; avec &lt;/em&gt;et enfin &lt;mark&gt; avec &lt;/mark&gt; </p>
           <p> Exemple : </p>
           <p> <strong>strong</strong>, <em>em</em> et <mark>mark</mark>. </p>
+            <h3>Le formulaire</h3>
+              <p> Pour réaliser un joli formulaire il vous faut connaitre quelques balises!</p>
+              <p> Tout d'abord on commence notre formulaire en rentrant &lt;form action="" method="post"&gt; et à la toute fin de notre formulaire on aura &lt;/form&gt; </p> 
+              <p> Ensuite on va pouvoir utiliser le &lt;fieldset&gt; pour pouvoir faire de jolis encadrés</p>
+              <p> De la même façon, une fois qu'on a mis tout ce qui doit rentrer dans notre encadré on ferme la balise avec &lt;/fieldset&gt; </p> 
+              <p> Ah oui, pour mettre une légende à cet encadré on peut rajouter on peut utiliser &lt;legend&gt;Ma_légende &lt;/legend&gt; </p> 
+              <p> En utilisant &lt;label&gt;mon_label&lt;/label&gt; on va pouvoir mettre une étiquette à la partie du formulaire qu'on souhaite</p> 
+              <p> Enfin le vif du sujet, pour créer une case dans lequel on va rentrer un nom, on va utiliser des inputs</p>
+              <p> Cela va se présenter sous la forme: &lt;input type="text" name="user_name" required/&gt;</p>
+              <p> Le type pourra être name, date, email.. </p>
+              <p> Required, rendra le champ obligatoire!</p>
+              <p> Pour mettre des commentaires, il faudra remplacer input par textarea et on l'écrira de la même façon que le input </p>
+              <p> Pour réaliser un formulaire à puces, il faudra créer un input de type radio</p>
+              <p> Pour des cases à cocher le input sera de type checkbox  </p>
+              <p> Dans tous les cas il faudra donner une valeur qui sera renvoyer suite aux choix</p>
+              <p> Il faudra rajouter dans le input value="qqchose" </p>
+              <p> On pourra créer des sélections avec : </p>
+              <p>&lt;select name="selection"&gt;</p>
+              <p>&lt;option value ="1"&gt;</p>
+              <p>Chante sloubi</p>
+              <p>&lt;/option&gt;</p>
+              <p>&lt;option value ="2"&gt;</p>
+              <p>Cul de chouette</p>
+              <p>&lt;/option&gt;</p>
+              <p>N'oublions pas les boutons envoyer et annuler </p>
+              <p>&lt;button type="reset" class="resetall"&gt; Annuler &lt;/button&gt;  
+              <p>&lt;button type="summit" class="summitall"&gt;Envoyer &lt;/button&gt;
+              <p> Pour finir, n'hésitez pas à utiliser la touche F12 pour accéder au code HTML </p>
+        </article>
+		<article id ="Utiles">
+          <h2>Quelques liens utiles!</h2>
+          <ul>
+            <li> <a href="https://developer.mozilla.org/fr/docs/Web/HTML"> MDN </a> </li>
+            <li> <a target="_blank" href="https://openclassrooms.com/courses/apprenez-a-creer-votre-site-web-avec-html5-et-css3"> Open classroom </a> </li>
+          </ul>
         </article>
       </section>
-      <section class="FIN">
-      <article id ="Utiles">
-        <h2>Quelques liens utiles!</h2>
-        <ul>
-          <li> <a href="https://developer.mozilla.org/fr/docs/Web/HTML"> MDN </a> </li>
-          <li> <a target="_blank" href="https://openclassrooms.com/courses/apprenez-a-creer-votre-site-web-avec-html5-et-css3"> Open classroom </a> </li>
-        </ul>
-      </article>
-    </section>
     </div>
     <footer class="foot">
       <p>Tout droits réservés</p>
@@ -151,11 +179,18 @@
     </div>
     <nav class="navi">
       <ul class="styleUL">
+        <li class="classli classliA"><a href="#gdtitre">Langage HTML</a></li>
         <li class="classli"><a href="#Rappel">Rappel des bases</a></li>
         <li class="classli"><a href="#Details">Les petits détails</a></li>
         <li class="classli"><a href="#Contenu">Le contenu</a></li>
         <li class="classli"><a href="#Finir">Pour finir</a></li>
-        <li class="classli"><a href="#Utiles">Quelques liens utiles</a></li>
+        
+        <li class="classli classliA"><a href="CSS.html">Langage CSS</a></li>
+
+        
+        <li class="classli classliA"><a href="#Utiles">Quelques liens utiles</a></li>
+        
+        <li class="classli classliA"><a href="formulaire.html"/>Votre avis nous intéresse</a></li>
       </ul>
     </nav>
     <aside class ="pub">
